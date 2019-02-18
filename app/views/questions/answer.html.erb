@@ -1,0 +1,19 @@
+<h1>Questions#answer</h1>
+<!-- app/views/questions/answer.html.erb -->
+<!--Objective: We will implement a simple Rails application with 2 pages:
+After submitting the form, the user is redirected to a new page where he
+will see his question and the coach answer. -->
+<body>
+  <div class="container">
+    <h1>Stupid Coaching</h1>
+    <div class="container">
+      <%= @question %>
+      <br>
+      <p>- You</p>
+      <%= @answer %>
+      <br>
+      <p>- Your coach</p>
+      <%= link_to "Another question?", ask_path %>
+      </div>
+  </div>
+</body>

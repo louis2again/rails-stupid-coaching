@@ -1,0 +1,12 @@
+<h1>Questions#ask</h1>
+<!-- app/views/pages/home.html.erb -->
+<!--Objective: We will implement a simple Rails application with 2 pages:
+First page is a form with an input, where a user can type a question to ask
+the Coach -->
+
+<p>Hello, I am your coach, what did you want to tell me?</p>
+<form action="/answer" method="get">
+  <input type="text" name="question" placeholder="What is your question for the coach?">
+  <input type="submit">
+</form>
+
